@@ -234,6 +234,7 @@ function blackjackHit(){
     updateScore(card,YOU);
     console.log('Your score is :'+YOU['score']);
     showScore(YOU);
+        
     }
 }
 
