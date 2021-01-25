@@ -1,5 +1,3 @@
-//alert('hello')
-
 // Challenge 1
 function ageInDays() {
     var birthYear = prompt("What is your birth year.");
