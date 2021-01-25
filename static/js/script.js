@@ -1,4 +1,4 @@
-alert('hello')
+//alert('hello')
 
 // Challenge 1
 function ageInDays() {
@@ -215,9 +215,9 @@ let blackjackGame = {
 
 const YOU = blackjackGame['you'];
 const DEALER = blackjackGame['dealer'];
-const hitSound = new Audio('/ch1/static/sounds/swish.m4a');
-const winSound = new Audio('/ch1/static/sounds/cash.mp3');
-const lossSound = new Audio('/ch1/static/sounds/aww.mp3');
+const hitSound = new Audio('static/sounds/swish.m4a');
+const winSound = new Audio('static/sounds/cash.mp3');
+const lossSound = new Audio('static/sounds/aww.mp3');
 
 
 document.querySelector('#blackjack-hit-button').addEventListener('click',blackjackHit);
@@ -247,7 +247,7 @@ function showCard(card,activePlayer){
         let cardImage = document.createElement('img');
         //  cardImage.innerHTML= '<img src="' + url + '" width="' + width + '" height="' + height + '" />';
         // cardImage.innerHTML = "<img src='/challenges/ch1/static/images/Q.png'  'height=50%' 'width=50%'; >"
-        cardImage.src = `/ch1/static/images/${card}.png`;
+        cardImage.src = `static/images/${card}.png`;
         cardImage.height = 140;
         cardImage.width = 140;
         document.querySelector(activePlayer['div']).appendChild(cardImage);
